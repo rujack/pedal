@@ -4,7 +4,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
   background-color: #3e1d3c !important;
   color: #e3e7ef;
 }
