@@ -1,15 +1,13 @@
-.main {
-  background-color: #3e1d3c;
-  color: #e3e7ef;
-  height: 100%;
+.cerita {
+  color:#e3e7ef;
 }
 
-.main a {
+.cerita a {
   color: #a39da4;
   border: 3px solid #a39da4;
 }
 
-.main a:hover {
+.cerita a:hover {
   color: #3e1d3c;
   background-color: #a39da4;
   border: 3px solid #a39da4;

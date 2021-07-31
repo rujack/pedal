@@ -5,12 +5,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start -p $PORT",
+    "lint": "next lint",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
+    "bootstrap": "^5.0.2",
     "next": "11.0.1",
+    "nprogress": "^0.2.0",
     "react": "17.0.2",
+    "react-bootstrap": "^2.0.0-beta.4",
     "react-dom": "17.0.2"
   },
   "devDependencies": {

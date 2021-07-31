@@ -1,0 +1,9 @@
+.header {
+  background-color: #3e1d3c;
+  color: #e3e7ef;
+  z-index: 2;
+}
+
+.header h4 {
+  text-transform: uppercase;
+}
