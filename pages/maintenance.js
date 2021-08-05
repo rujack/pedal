@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { Col, Container, Row } from "react-bootstrap";
@@ -38,6 +39,11 @@ const Maintenace = () => {
 
   return (
     <>
+      <Head>
+        <title>Pedal - Maintenance</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+    
       <Container className="text-white">
         <h1 className="text-center mt-3" style={{fontWeight:'bolder'}}>PEDALKU</h1>
         <Row xs={1} md={1} lg={2} className="my-2 text-white">
