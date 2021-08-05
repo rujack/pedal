@@ -64,6 +64,29 @@ const Cerita = () => {
                 </Card.Body>
               </Card>
             </Col>
+            <Col className="m-auto">
+              <Card
+                style={{
+                  width: "18rem",
+                  backgroundColor: "#3e1d3c",
+                  border: "3px solid ",
+                }}
+                className="m-auto my-2">
+                <Image
+                  variant="top"
+                  src="/rak_buku.svg"
+                  width={250}
+                  height={150}
+                  alt=""
+                />
+                <Card.Body>
+                  <Card.Title>Cerpen Random</Card.Title>
+                  <Link href="/cerita/cerpen_random">
+                    <a className="btn">Baca</a>
+                  </Link>
+                </Card.Body>
+              </Card>
+            </Col>
           </Row>
         </Container>
       </div>

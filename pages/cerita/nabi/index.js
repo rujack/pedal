@@ -6,34 +6,8 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 
 import styles from "../../../styles/Cerita.module.css";
 
-const Nabi = () => {
-  const nama_nabi = [
-    "adam",
-    "idris",
-    "nuh",
-    "hud",
-    "sholeh",
-    "ibrahim",
-    "luth",
-    "ismail",
-    "ishaq",
-    "yaqub",
-    "yusuf",
-    "ayyub",
-    "syuaib",
-    "musa",
-    "harun",
-    "dzulkifli",
-    "daud",
-    "sulaiman",
-    "ilyas",
-    "ilyasa",
-    "yunus",
-    "zakariya",
-    "yahya",
-    "isa",
-    "muhammad",
-  ];
+const Nabi = (props) => {
+  const { data } = props;
   return (
     <>
       <Head>
@@ -45,7 +19,7 @@ const Nabi = () => {
         <Container>
           <h1 className="text-center">Daftar Cerita</h1>
           <Row xs={1} md={2} lg={3}>
-            {nama_nabi.map((nabi, i) => {
+            {data.map((nabi, i) => {
               return (
                 <Fragment key={i}>
                   <Col className="me-auto text-center">
@@ -63,17 +37,16 @@ const Nabi = () => {
                           width: "100%",
                           display: "block",
                         }}
-                        src="/buku.svg"
+                        src={nabi.image_url}
                         width={250}
                         height={150}
                         alt=""
                       />
                       <Card.Body>
                         <Card.Title>
-                          {i + 1}. Kisah Nabi{" "}
-                          {nabi.charAt(0).toUpperCase() + nabi.substring(1)}
+                          {i + 1}. Kisah Nabi {nabi.name}
                         </Card.Title>
-                        <Link href={`/cerita/nabi/${nabi}`}>
+                        <Link href={`/cerita/nabi/${i + 1}`}>
                           <a className="btn">Membaca</a>
                         </Link>
                       </Card.Body>
@@ -87,6 +60,18 @@ const Nabi = () => {
       </div>
     </>
   );
+};
+
+export const getStaticProps = async () => {
+  const res = await fetch(
+    `https://islamic-api-zhirrr.vercel.app/api/kisahnabi`,
+  );
+  const data = await res.json();
+  return {
+    props: {
+      data,
+    },
+  };
 };
 
 export default Nabi;

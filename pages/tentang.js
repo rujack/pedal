@@ -36,9 +36,7 @@ const Tentang = () => {
           <hr />
           <h4>TerimaKasih</h4>
           <p>kepada zhirrr telah menyediakan API</p>
-          <pre>
-            https://kisahnabi-api-zhirrr.vercel.app/api/searchnabi?q=adam
-          </pre>
+          <pre>https://islamic-api-zhirrr.vercel.app/api/kisahnabi</pre>
         </div>
       </Container>
     </>
