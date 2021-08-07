@@ -26,6 +26,10 @@ const Maintenace = () => {
         setDetik(seconds);
       }else{
         clearInterval(interval.current)
+        setHari('0');
+        setjam('0');
+        setMenit('0');
+        setDetik('0');
       }
     },1000);
   };
