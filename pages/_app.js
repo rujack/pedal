@@ -4,13 +4,13 @@ import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "nprogress/nprogress.css";
 import Layout from "../components/Layout";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 function MyApp({ Component, pageProps,router }) {
 
-  useEffect(()=>{
-    Router.push('/maintenance')
-  },[])
+//   useEffect(()=>{
+//     Router.push('/maintenance')
+//   },[])
 
   nProgress.configure({ showSpinner: false });
 
