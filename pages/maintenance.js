@@ -1,12 +1,13 @@
+import Head from "next/head";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 
 const Maintenace = () => {
-  const [hari, setHari] = useState("");
-  const [jam, setjam] = useState("");
-  const [menit, setMenit] = useState("");
-  const [detik, setDetik] = useState("");
+  const [hari, setHari] = useState("0");
+  const [jam, setjam] = useState("0");
+  const [menit, setMenit] = useState("0");
+  const [detik, setDetik] = useState("0");
 
   let interval = useRef()
   const countDown = () => {
@@ -25,6 +26,10 @@ const Maintenace = () => {
         setDetik(seconds);
       }else{
         clearInterval(interval.current)
+        setHari('0');
+        setjam('0');
+        setMenit('0');
+        setDetik('0');
       }
     },1000);
   };
@@ -38,6 +43,11 @@ const Maintenace = () => {
 
   return (
     <>
+      <Head>
+        <title>Pedal - Maintenance</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+    
       <Container className="text-white">
         <h1 className="text-center mt-3" style={{fontWeight:'bolder'}}>PEDAL</h1>
         <Row xs={1} md={1} lg={2} className="my-2 text-white">
