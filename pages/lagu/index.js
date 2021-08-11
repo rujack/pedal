@@ -1,14 +1,14 @@
+import { Fragment } from "react";
 import { Container } from "react-bootstrap";
 
 const LaguDaerah = ({ data }) => {
-  console.log(data);
   return (
     <Container className="text-white">
       <h1>lagu</h1>
-      {data.data.map((lagu, i) => {
+      {data.map((lagu, i) => {
         return (
-          <>
-            <p key={i}>
+          <Fragment key={i}>
+            <p>
               {i + 1}. {lagu.daerah}
             </p>
             <ol>
@@ -21,7 +21,7 @@ const LaguDaerah = ({ data }) => {
                 );
               })}
             </ol>
-          </>
+          </Fragment>
         );
       })}
     </Container>
