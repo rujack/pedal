@@ -4,9 +4,6 @@ import "../styles/globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "nprogress/nprogress.css";
 import Layout from "../components/Layout";
-
-function MyApp({ Component, pageProps,router }) {
-
 // import { useEffect } from "react";
 
 function MyApp({ Component, pageProps,router }) {
