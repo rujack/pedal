@@ -30,7 +30,7 @@ const LaguDaerah = ({ data }) => {
 
 export const getStaticProps = async () => {
   const res = await fetch(
-    `https://raw.githubusercontent.com/rujack/api-pedal/main/lagu.json`,
+    `https://api-pedalku.herokuapp.com/lagu`,
   );
   const data = await res.json();
   return {

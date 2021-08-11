@@ -35,8 +35,15 @@ const Tentang = () => {
           </Table>
           <hr />
           <h4>TerimaKasih</h4>
-          <p>kepada zhirrr telah menyediakan API</p>
-          <pre>https://islamic-api-zhirrr.vercel.app/api/kisahnabi</pre>
+          <p className="mb-0">kepada zhirrr telah menyediakan API :</p>
+          <pre className="bg-dark py-1 px-3">https://islamic-api-zhirrr.vercel.app/api/kisahnabi</pre>
+          <h4>API</h4>
+          <p className="mb-0">Pedal Telah Menyediakan API :</p>
+          <pre className="bg-dark py-1 px-3">
+            https://api-pedalku.herokuapp.com/lagu =&gt; Lagu Daerah<br/>
+            https://api-pedalku.herokuapp.com/cerita_rakyat =&gt; Cerita Rakyat<br/>
+            https://api-pedalku.herokuapp.com/random_cerpen =&gt; Cerpen Acak dari cerpenmu.com(fdciabdul)
+          </pre>
         </div>
       </Container>
     </>

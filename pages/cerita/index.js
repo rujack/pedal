@@ -59,7 +59,7 @@ const Cerita = () => {
                 <Card.Body>
                   <Card.Title>Cerita Rakyat</Card.Title>
                   <Link href="/cerita/rakyat">
-                    <a className="btn disabled">Segera</a>
+                    <a className="btn">Daftar Cerita</a>
                   </Link>
                 </Card.Body>
               </Card>

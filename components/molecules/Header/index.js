@@ -17,8 +17,8 @@ const HeaderComp = () => {
             className="justify-content-end">
             <Nav className="me-end text-center">
               <Link href="/tentang"><a className="nav-link">Tentang</a></Link>
-              {/* <Link href="/kontak"><a className="nav-link">Kontak</a></Link>
-              <Link href="/credit"><a className="nav-link">Credit</a></Link> */}
+              {/* <Link href="/api-pedal"><a className="nav-link">API</a></Link> */}
+              {/* <Link href="/credit"><a className="nav-link">Credit</a></Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>

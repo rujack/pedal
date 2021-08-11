@@ -39,7 +39,7 @@ const Maintenace = () => {
   return (
     <>
       <Container className="text-white">
-        <h1 className="text-center mt-3" style={{fontWeight:'bolder'}}>PEDALKU</h1>
+        <h1 className="text-center mt-3" style={{fontWeight:'bolder'}}>PEDAL</h1>
         <Row xs={1} md={1} lg={2} className="my-2 text-white">
           <Col className="text-center">
             <Image

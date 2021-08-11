@@ -6,6 +6,7 @@
 .pnp.js
 README.md
 package-lock.json
+/pages/maintenance.js
 
 # testing
 /coverage

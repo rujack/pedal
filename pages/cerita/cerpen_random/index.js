@@ -87,7 +87,7 @@ const Cerpen = (props) => {
 };
 
 export const getServerSideProps = async () => {
-  const res = await fetch(`https://fdciabdul.tech/api/randomcerpen/`);
+  const res = await fetch(`https://api-pedalku.herokuapp.com/random_cerpen`);
   const data = await res.json();
   return {
     props: {
